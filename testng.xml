@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan">
+  <test  name="home loan">
+    <classes>
+      <class name="TestNgPackage.TestNgClass1"/>
+      <class name="TestNgPackage.TestNgClass2"/>
+        <class name="TestNgPackage.TestNgClass5"/>
+    </classes>
+  </test> 
+  
+  <test name="car loan">
+  <classes>
+        <class name="TestNgPackage.TestNgClass3">
+           </class>
+                <class name="TestNgPackage.TestNgClass4">
+        <methods>
+        <exclude name="Mobile.*"/>
+      <!-- the above code is use to Run test case excluding all the test case name(method name) start with "Mobile" -->  
+       <!--  include name="LoginAPICarLoan" = it is used for executing only specific test case(method) in whole class-->
+       
+        </methods>
+         </class>
+        
+     
+  </classes>
+  
+  </test>
+</suite> 

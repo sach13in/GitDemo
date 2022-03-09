@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan">
+<listeners> 
+<listener class-name="TestNgPackage.Listeners"/>
+</listeners>
+  <test  name="home loan">
+  <parameter name="url" value="homeloan.com"/>
+  <parameter name ="username" value="username is sachin"/>
+    <classes>
+      <class name="TestNgPackage.TestNgClass7"/>
+    </classes>
+  </test> 
+  
+  <test name="car loan">
+    <parameter name ="username" value="username is sachin"/>
+  <parameter name="url" value="carloan.com"></parameter>
+  <classes>
+        <class name="TestNgPackage.TestNgClass6">
+   
+         </class>
+        
+     
+  </classes>
+  
+  </test>
+</suite> 
